@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+
     <title>The UX Review Blog</title>
     <link
       rel="shortcut icon"
       href="images/favicon-Bg91HCOF.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,17 +24,22 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
+    <!-- navbar section-->
     <div id="navbar" class="nav bg-yellow">
-      <div class="nav-content">
+      <div class="nav-content xxl-d-flex">
+        <!-- flex parent -->
         <div
           class="content-container xxl-container-83 d-flex justify-content-space-between align-items-center"
         >
+          <!-- left section -->
           <div class="logo">
             <a href="#">
               <span class="">The UX</span>
               <span class="text-orange">Review</span>
             </a>
           </div>
+
+          <!-- middle section -->
           <div class="nav-menu xl-d-block">
             <ul class="d-flex align-items-space-evenly align-items-center">
               <li>
@@ -47,7 +55,7 @@
                 <span><i class="fa-solid fa-star text-gray"></i></span>
               </li>
               <li>
-                <a href="#authors">AUTHORS</a>
+                <a href="#author">AUTHORS</a>
               </li>
               <li>
                 <span><i class="fa-solid fa-star text-gray"></i></span>
@@ -57,19 +65,31 @@
               </li>
             </ul>
           </div>
-          <div class="nav-button xl-d-block"><a href="">SUBSCRIBE NOW</a></div>
+
+          <!-- right section -->
+          <div class="nav-button xl-d-block">
+            <a href="#community">SUBSCRIBE NOW</a>
+          </div>
+
+          <!-- mobile bar button -->
           <span class="mobile-menu xl-d-none"
             ><i class="fa-solid fa-bars"></i
           ></span>
         </div>
       </div>
     </div>
+    <!--end of navbar section-->
 
-    <div id="home" class="home bg-yellow p-relative">
+    <!-- home section -->
+    <div id="home" class="home border-bottom bg-yellow p-relative">
+      <!-- button square shape -->
       <div class="third-square"></div>
+
+      <!-- flex parent -->
       <div
-        class="content-container xxl-container-83 lg-d-flex align-items-center gap"
+        class="content-container xxl-container-83 lg-d-flex align-items-center lg-gap p-relative z-index"
       >
+        <!-- left section of home -->
         <div class="left-section lg-50">
           <span class="trending-now">🔥 TRENDING NOW</span>
           <div class="header-text">
@@ -86,18 +106,24 @@
             </p>
           </div>
           <div class="header-buttons">
-            <button class="start bg-black text-white">
-              <i class="fa-solid fa-rocket text-white"></i>
-              START READING
-            </button>
-            <button class="watch bg-white">
-              <i class="fa-solid fa-play"></i>
-              WATCH INTRO
-            </button>
+            <div class="start">
+              <button class="bg-black text-white">
+                <i class="fa-solid fa-rocket text-white"></i>
+                START READING
+              </button>
+            </div>
+            <div class="watch">
+              <button class="bg-white">
+                <i class="fa-solid fa-play"></i>
+                WATCH INTRO
+              </button>
+            </div>
           </div>
         </div>
 
+        <!-- right section (image) -->
         <div class="right-section p-relative lg-50">
+          <!-- image container -->
           <div class="image">
             <img
               src="images/e7c75b833c-f09fa794a4e1fbd04b1e.png"
@@ -110,18 +136,34 @@
         </div>
       </div>
     </div>
+    <!-- end of home section -->
 
-    <div id="latest-article" class="section2 padding-block-section">
-      <div class="content-container">
-        <div class="title xxl-container-83">
-          <h2>LATEST ARTICLES</h2>
-        </div>
-        <div
-          class="cards-and-categories xl-d-flex xxl-container-83 xl-gap xl-align-items-start"
-        >
+    <!-- latest article section -->
+    <div
+      id="latest-article"
+      class="section2 border-bottom padding-block-section md-padding-section"
+    >
+      <div class="content-container xxl-container-83">
+        <!-- flex parent -->
+        <div class="cards-and-categories xl-d-flex xl-gap xl-align-items-start">
+          <!-- first child left section -->
           <div class="all-cards">
-            <div class="card card1">
-              <div class="card-container xl-d-flex xl-gap ">
+            <div
+              class="d-flex justify-content-space-between align-items-center"
+            >
+              <div class="title">
+                <h2>LATEST ARTICLES</h2>
+              </div>
+              <div class="fresh-content d-none md-d-block">
+                <span>🔥 FRESH CONTENT</span>
+              </div>
+            </div>
+
+            <div class="shadow">
+              <!--nested flex parent -->
+              <div class="card card1 md-margin-48 xl-d-flex xl-gap">
+
+                <!-- left section child-->
                 <div class="image-section">
                   <div class="image-card p-relative">
                     <img
@@ -134,42 +176,50 @@
                   </div>
                 </div>
 
+                <!-- right section child -->
                 <div class="all-paragraph">
                   <div class="desc-span">
-                    <span class="bg-yellow">TECH</span>
+                    <span class="bg-yellow2">TECH</span>
                   </div>
                   <div class="card-paragraph">
                     <h3 class="margin-10">Why Your Website Needs More Edge</h3>
-                    <p class="card-paragraph margin-10">
+                    <p class="card-paragraph margin-16">
                       Exploring the psychological impact of bold, unapologetic
                       design choices on user engagement and brand perception in
                       the digital age.
                     </p>
                   </div>
-                  <div class="card-info md-d-flex md-flex-wrap">
-                    <div class="name">
+
+                  <!-- flex parent information -->
+                  <div
+                    class="card-info md-d-flex md-flex-wrap md-row-gap xxl-space-between"
+                  >
+                    <span class="name d-flex gap0-7">
                       <i class="fa-solid fa-user"></i>
                       BY ALEX BRUTAL
-                    </div>
-                    <div class="date">
+                    </span>
+                    <span class="date d-flex gap0-7">
                       <i class="fa-solid fa-calendar"></i>
                       JAN 8, 2025
-                    </div>
-                    <div class="time">
+                    </span>
+                    <span class="time d-flex gap0-7">
                       <i class="fa-solid fa-clock"></i>
                       5 MIN READ
-                    </div>
-                    <div class="reacts text-red">
+                    </span>
+                    <span class="reacts d-flex gap0-7 text-red">
                       <i class="fa-solid fa-heart"></i>
                       127
-                    </div>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="card card2">
-              <div class="card-container xl-d-flex xl-gap">
+            <div class="shadow">
+              <!--nested flex parent -->
+              <div class="card card2 md-margin-48 xl-d-flex xl-gap">
+
+                <!-- left section child-->
                 <div class="image-section">
                   <div class="image-card p-relative">
                     <img
@@ -182,46 +232,53 @@
                   </div>
                 </div>
 
+                <!-- right section child -->
                 <div class="all-paragraph">
                   <div class="desc-span">
                     <span class="bg-cyan">DESIGN</span>
                   </div>
                   <div class="card-paragraph">
                     <h3 class="margin-10">Typography That Screams</h3>
-                    <p class="card-paragraph margin-10">
+                    <p class="card-paragraph margin-16">
                       How to choose and implement bold typography that commands
                       attention without sacrificing readability or user
                       experience.
                     </p>
                   </div>
-                  <div class="card-info md-d-flex md-flex-wrap">
-                    <div class="name">
+
+                  <!-- flex parent information -->
+                  <div
+                    class="card-info md-d-flex md-flex-wrap md-row-gap xxl-space-between"
+                  >
+                    <span class="name d-flex gap0-7">
                       <i class="fa-solid fa-user"></i>
                       BY Arnold Reeve
-                    </div>
-                    <div class="date">
+                    </span>
+                    <span class="date d-flex gap0-7">
                       <i class="fa-solid fa-calendar"></i>
                       JAN 6, 2025
-                    </div>
-                    <div class="time">
+                    </span>
+                    <span class="time d-flex gap0-7">
                       <i class="fa-solid fa-clock"></i>
                       7 MIN READ
-                    </div>
-                    <div class="reacts text-red">
+                    </span>
+                    <span class="reacts d-flex gap0-7 text-red">
                       <i class="fa-solid fa-heart"></i>
                       89
-                    </div>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="card card3">
-              <div class="card-container xl-d-flex xl-gap ">
+            <div class="shadow">
+              <!--nested flex parent -->
+              <div class="card card3 md-margin-48 xl-d-flex xl-gap">
+                <!-- left section child-->
                 <div class="image-section">
                   <div class="image-card p-relative">
                     <img
-                      src="images/user-engagement-2-DFdiyblT.jpg"
+                      src="images/anti-instagram-Bn9b8TEi.jpg"
                       alt="abstract design"
                     />
                     <div class="new bg-purple p-absolute">
@@ -230,98 +287,381 @@
                   </div>
                 </div>
 
+                <!-- right section child -->
                 <div class="all-paragraph">
                   <div class="desc-span">
                     <span class="bg-pink">CULTURE</span>
                   </div>
                   <div class="card-paragraph">
                     <h3 class="margin-10">The Anti-Instagram Movement</h3>
-                    <p class="card-paragraph margin-10">
+                    <p class="card-paragraph margin-16">
                       Young creators are abandoning polished feeds for raw,
                       authentic content that celebrates imperfection and real
                       human connection.
                     </p>
                   </div>
-                  <div class="card-info md-d-flex md-flex-wrap">
-                    <div class="name">
+
+                  <!-- flex parent information -->
+                  <div
+                    class="card-info md-d-flex md-flex-wrap md-row-gap xxl-space-between"
+                  >
+                    <span class="name d-flex gap0-7">
                       <i class="fa-solid fa-user"></i>
                       BY MIKE EDGE
-                    </div>
-                    <div class="date">
+                    </span>
+                    <span class="date d-flex gap0-7">
                       <i class="fa-solid fa-calendar"></i>
                       JAN 4, 2025
-                    </div>
-                    <div class="time">
+                    </span>
+                    <span class="time d-flex gap0-7">
                       <i class="fa-solid fa-clock"></i>
                       4 MIN READ
-                    </div>
-                    <div class="reacts text-red">
+                    </span>
+                    <span class="reacts d-flex gap0-7 text-red">
                       <i class="fa-solid fa-heart"></i>
                       203
-                    </div>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="load-more-btn">
-              <button>
+
+            <!-- button -->
+            <div class="load-more-btn margin-36 md-margin-48">
+              <div>
+                <button>
                 <i class="fa-solid fa-plus"></i>
                 LOAD MORE ARTICLE
               </button>
+              </div>
             </div>
           </div>
 
-          <div class="all">
-            <div class="trending-and-categories card">
-              <div class="card-container">
-                <div class="title"><h4>TRENDING NOW</h4></div>
-                <div class="trending d-flex align-items-center">
-                  <div class="left-side">
-                    <span class="number text-red2">01</span>
-                  </div>
-                  <div class="right-side">
-                    <h5>The Death of Minimalism</h5>
-                    <span class="reads">12.5K reads • 🔥 Trending</span>
-                  </div>
+          <!-- second child right section -->
+          <div class="all xl-p-sticky">
+            <!-- first card (top) -->
+            <div class="trending-now-card card">
+              <div class="title"><h3 class="h3-xl">TRENDING NOW</h3></div>
+
+              <!-- first line -->
+              <!-- flex parent -->
+              <div class="trending cont1 d-flex">
+                <!-- numbers left side -->
+                <div class="left-side">
+                  <span class="number text-red2">01</span>
                 </div>
-                <div class="trending d-flex">
-                  <div class="left-side">
-                    <span class="number text-blue">02</span>
-                  </div>
-                  <div class="right-side">
-                    <h5>Chaos as a Design System</h5>
-                    <span class="reads">8.2K reads • ⚡ Rising</span>
-                  </div>
+                <!-- paragraph right side -->
+                <div class="right-side">
+                  <h4>The Death of Minimalism</h4>
+                  <span class="reads">12.5K reads • 🔥 Trending</span>
                 </div>
-                <div class="trending d-flex">
-                  <div class="left-side">
-                    <span class="number text-violet">03</span>
-                  </div>
-                  <div class="right-side">
-                    <h5>Digital Rebellion</h5>
-                    <span class="reads">6.7K reads • 💥 Hot</span>
-                  </div>
+              </div>
+
+              <!-- second line -->
+              <!-- flex parent -->
+              <div class="trending cont2 d-flex">
+                <!-- numbers left side -->
+                <div class="left-side">
+                  <span class="number text-blue">02</span>
+                </div>
+                <!-- paragraph right side -->
+                <div class="right-side">
+                  <h4>Chaos as a Design System</h4>
+                  <span class="reads">8.2K reads • ⚡ Rising</span>
+                </div>
+              </div>
+
+              <!-- third line -->
+              <!-- flex parent -->
+              <div class="trending cont3 d-flex">
+                <!-- numbers left side -->
+                <div class="left-side">
+                  <span class="number text-violet">03</span>
+                </div>
+                <!-- paragraph right side -->
+                <div class="right-side">
+                  <h4>Digital Rebellion</h4>
+                  <span class="reads">6.7K reads • 💥 Hot</span>
                 </div>
               </div>
             </div>
 
-            <div class="categories card">
-              <div class="card-container">
-                <div class="title"><h4>CATEGORIES</h4></div>
-                <div class="block bg-light-yellow">
-                  <span>TECH (24)</span>
+            <!-- second card (bottom) -->
+            <div class="categories-card card">
+              <div class="title"><h3 class="h3-xl">CATEGORIES</h3></div>
+              <div class="block block1 bg-light-yellow">
+                <span>TECH (24)</span>
+              </div>
+              <div class="block block2 bg-light-green">
+                <span>DESIGN (18)</span>
+              </div>
+              <div class="block block3 bg-light-pink">
+                <span>CULTURE (15)</span>
+              </div>
+              <div class="block block4 bg-light-blue">
+                <span>OPINION (12)</span>
+              </div>
+              <div class="block block5 bg-light-purple">
+                <span>TUTORIALS (9)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of latest article section -->
+
+    <!-- author section -->
+    <div
+      id="author"
+      class="section3 border-bottom bg-dark-yellow padding-block-section md-padding-section p-relative"
+    >
+      <div class="content-container xxl-container-83">
+        <!-- main title section -->
+        <div class="title text-align-center p-relative">
+          <h2>MEET THE AUTHORS</h2>
+          <p class="title-paragraph">The rebels behind the brutal truth</p>
+        </div>
+
+        <!-- all cards container -->
+        <!-- flex parent -->
+        <!-- flex wrap is for forcing the third card to move down to the next line-->
+        <div
+          class="all-cards z-index p-relative text-align-center lg-d-flex lg-flex-wrap lg-col-gap"
+        >
+          <!-- first card and first child-->
+          <div class="card-1 card bg-light-yellow p-relative">
+            <div class="author-card-image">
+              <img src="images/avatar-2.jpg" alt="first author" />
+            </div>
+            <div class="author-info margin-10">
+              <h3 class="heavy-font h3-xl margin-18-6">ALEX BRUTAL</h3>
+              <span class="text-dark-gray">Tech Critic & Design Rebel</span>
+            </div>
+            <div class="card-paragraph-small margin-16">
+              Destroying conventional wisdom one article at a time. 10+ years
+              fighting the good fight against boring design and corporate BS.
+            </div>
+            <div class="social-icons">
+              <a href="https://x.com/" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- second card second child-->
+          <div class="card-2 card bg-light-blue p-relative">
+            <div class="author-card-image">
+              <img src="images/avatar-2-CwUcGkzI.jpg" alt="second author" />
+            </div>
+            <div class="author-info margin-10">
+              <h3 class="heavy-font h3-xl margin-18-6">Arnold Reeve</h3>
+              <span class="text-dark-gray"
+                >UX Anarchist & Visual Provocateur</span
+              >
+            </div>
+            <div class="card-paragraph-small margin-16">
+              Challenging design norms and creating chaos that actually works.
+              Former corporate designer turned rebel with a cause.
+            </div>
+            <div class="social-icons">
+              <a href="https://x.com/" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- third card third child-->
+          <div class="card-3 card bg-light-pink p-relative">
+            <div class="author-card-image">
+              <img src="images/avatar-5-CDQD_dyw.jpg" alt="third author" />
+            </div>
+            <div class="author-info margin-10">
+              <h3 class="heavy-font h3-xl margin-18-6">MIKE EDGE</h3>
+              <span class="text-dark-gray"
+                >Cultural Critic & Trend Destroyer
+              </span>
+            </div>
+            <div class="card-paragraph-small margin-16">
+              Dissecting digital culture and exposing the truth behind viral
+              trends. No filter, just facts that cut through the noise.
+            </div>
+            <div class="social-icons">
+              <a href="https://x.com/" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of author section -->
+
+    <!-- community section -->
+    <div
+      id="community"
+      class="section4 border-bottom padding-block-section md-padding-section p-relative"
+    >
+      <div class="content-container xxl-container-83">
+        <!-- main title section -->
+        <div class="title text-align-center p-relative">
+          <h2>JOIN THE REBELLION</h2>
+          <p class="title-paragraph">
+            Where rebels gather to change the digital world
+          </p>
+        </div>
+
+        <!--main flex perant  -->
+        <div
+          class="lg-d-flex lg-flex-wrap lg-justify-content-space-between align-items-center lg-col-gap-3"
+        >
+          <div class="left-side-section">
+            <h3 class="h3-xxl margin-bottom-24">
+              BECOME PART OF SOMETHING BIGGER
+            </h3>
+            <div class="paragraph-container margin-bottom-24">
+              <p>
+                Join thousands of designers, developers, and digital rebels who
+                are tired of the same old boring content. Our community is where
+                raw ideas meet bold execution and real change happens.
+              </p>
+            </div>
+
+            <div class="features d-flex flex-wrap flex-direct-col gap-row">
+              <!-- flex parent (features) -->
+              <div
+                class="feature-1 d-flex justify-content-start gap align-items-center common"
+              >
+                <dix class=" iconss iconss1 d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-check"></i>
+                </dix>
+                <span
+                  >Weekly brutal insights newsletter with exclusive content
+                </span>
+              </div>
+
+              <!-- flex parent (features) -->
+              <div
+                class="feature-2 d-flex justify-content-start gap align-items-center common"
+              >
+                <div class="iconss iconss2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-discord "></i></div>
+                <span
+                  >Exclusive community Discord access for real-time discussions
+                </span>
+              </div>
+
+              <!-- flex parent (features) -->
+              <div
+                class="feature-3 d-flex justify-content-start gap align-items-center common"
+              >
+                <div class="iconss iconss3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-star "></i></div>
+                <span>Early access to new articles before they go public </span>
+              </div>
+
+              <!-- flex parent (features) -->
+              <div
+                class="feature-4 d-flex justify-content-start gap align-items-center common"
+              >
+                <div class="iconss iconss4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-pen "></i></div>
+                <span>Submit your own brutal takes and get featured </span>
+              </div>
+            </div>
+
+            <div class="join-now-btn md-margin-48">
+              <div>
+                <button>
+                <i class="fa-solid fa-rocket"></i>
+                JOIN NOW - IT'S FREE
+              </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-side-section">
+            <div class="large-card card">
+              <h4 class="h4-xl margin-bottom-24">WHAT REBELS ARE SAYING</h4>
+
+              <!-- 1st card -->
+              <div class="card1 container">
+                <p class="margin-10">
+                  "Finally, a blog that tells it like it is. No corporate BS,
+                  just pure truth about what's really happening in tech. This is
+                  the wake-up call our industry needed."
+                </p>
+
+                <!-- flex parent (image and info)-->
+                <div
+                  class="card-info d-flex justify-content-start align-items-center gap0-7"
+                >
+                  <div class="card-image">
+                    <img src="images/avatar-4-EAD2OaMD.png" alt="mark t" />
+                  </div>
+                  <div class="member-info">
+                    <h5>Mark T.</h5>
+                    <span>Senior Designer at Meta</span>
+                  </div>
                 </div>
-                <div class="block bg-light-green">
-                  <span>DESIGN (18)</span>
+              </div>
+
+              <!-- 2nd card -->
+              <div class="card2 container">
+                <p class="margin-10">
+                  "The UX Review changed how I think about design. It's raw,
+                  honest, and exactly what our industry needs. Every article
+                  challenges my assumptions."
+                </p>
+
+                <!-- flex parent (image and info)-->
+                <div
+                  class="card-info d-flex justify-content-start align-items-center gap0-7"
+                >
+                  <div class="card-image">
+                    <img src="images/avatar-5-CDQD_dyw.jpg" alt="ALEX M." />
+                  </div>
+                  <div class="member-info">
+                    <h5>ALEX M.</h5>
+                    <span>Lead Developer at Stripe</span>
+                  </div>
                 </div>
-                <div class="block bg-light-pink">
-                  <span>CULTURE (15)</span>
-                </div>
-                <div class="block bg-light-blue">
-                  <span>OPINION (12)</span>
-                </div>
-                <div class="block bg-light-purple">
-                  <span>TUTORIALS (9)</span>
+              </div>
+
+              <!-- 3rd card -->
+              <div class="card3 container">
+                <p class="margin-10">
+                  "The most authentic voice in digital culture. Every article
+                  challenges my assumptions and makes me think differently about
+                  the work I do."
+                </p>
+
+                <!-- flex parent (image and info)-->
+                <div
+                  class="card-info d-flex justify-content-start align-items-center gap0-7"
+                >
+                  <div class="card-image">
+                    <img src="images/avatar-6-CMLrVfwj.png" alt="James K." />
+                  </div>
+                  <div class="member-info">
+                    <h5>James K.</h5>
+                    <span>Creative Director at Adobe</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -329,5 +669,98 @@
         </div>
       </div>
     </div>
+    <!-- end of community section -->
+
+    <!-- footer section -->
+    <div
+      id="footer"
+      class="section5 padding-block-section md-padding-section p-relative bg-black"
+    >
+      <!-- main flex parent -->
+      <div
+        class="content-container xxl-container-83 md-d-flex md-flex-wrap .md-justify-flex-start lg-justify-content-space-between"
+      >
+        <div class="footer-left-column text-white">
+          <!-- flex logo section -->
+          <div
+            class="footer-logo d-flex justify-content-start align-items-center gap margin-bottom-24"
+          >
+            <!-- flex icon-container to center icon -->
+            <div class="icon d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h2 class="h2-small">THE UX REVIEW</h2>
+          </div>
+
+          <div class="footer-paragraph">
+            <p class="card-paragraph">
+              Raw, unfiltered thoughts on tech, design, and digital culture. No
+              compromise, no corporate speak, just brutal truth that matters.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-middle-column text-white">
+          <h3 class="heavy-font margin-bottom-24">CATEGORIES</h3>
+          <div class="footer-list">
+            <ul class="margin-bottom-24">
+              <li><a href="#">TECH</a></li>
+              <li><a href="#">DESIGN</a></li>
+              <li><a href="#">CULTURE</a></li>
+              <li><a href="#">OPINION</a></li>
+              <li><a href="#">TUTORIALS</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right-column text-white">
+          <div>
+            <h3 class="heavy-font margin-bottom-24">NEWSLETTER</h3>
+            <p class="card-paragraph margin-bottom-24">
+              Get brutal insights delivered weekly. No spam, just truth that
+              cuts through the noise.
+            </p>
+          </div>
+          <div class="form">
+            <form action="">
+              <input
+                class="margin-10"
+                type="email"
+                placeholder="YOUR EMAIL ADDRESS"
+              />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- flex parent copy rights and links -->
+        <div
+          class="footer-bottom text-align-center p-relative xl-d-flex xl-space-between xl-align-items-center text-white"
+        >
+          <!-- first child -->
+          <div class="copy-rights">
+            <p class="card-paragraph weight-600">
+              © 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.
+            </p>
+          </div>
+
+          <!-- last child -->
+          <div class="privacy-lists">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li class="card-paragraph-small weight-600">
+                <a href="">PRIVACY POLICY</a>
+              </li>
+              <li class="card-paragraph-small weight-600">
+                <a href="">TERMS OF USE</a>
+              </li>
+              <li class="card-paragraph-small weight-600">
+                <a href="">COOKIE POLICY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer section -->
   </body>
 </html>
